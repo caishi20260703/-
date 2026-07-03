@@ -1,0 +1,1 @@
+let a=[];function add(){let f=img.files[0];if(!f)return;let r=new FileReader();r.onload=e=>{a.unshift({i:e.target.result,n:name.value,m:material.value,s:size.value,p:price.value});list.innerHTML=a.map(x=>`<div class=card><img src='${x.i}'><div>${x.n}<br>${x.m}<br>${x.s}<br>¥${x.p}</div></div>`).join('')};r.readAsDataURL(f)}
